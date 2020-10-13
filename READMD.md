@@ -18,3 +18,8 @@
 2.pom.xml Cache的相关jar包支持
 3.CacheManager Bean配置类
 4.使用注解，表示我们的方法哪些需要缓存
+
+###集成Guava令牌桶实现全局限流
+1.pom.xml引入Guava工具包的支持
+2.定义一个拦截器，实现令牌的发放和获取
+3.将拦截器配置到web系统中

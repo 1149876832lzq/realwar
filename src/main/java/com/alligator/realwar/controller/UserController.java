@@ -122,7 +122,6 @@ public class UserController {
                     userVo.setPassword("******");
                     userVo.setPhone(userDto.getPhone()
                             .replace("(\\d{3})\\d{4}(\\d{4})", "$1****$2"));
-
                     return userVo;
                 })
                 .collect(Collectors.toList());
