@@ -2,7 +2,6 @@ package com.alligator.realwar.config;
 
 import com.alligator.realwar.interceptor.RateLimitInterceptor;
 import lombok.extern.slf4j.Slf4j;
-import org.omg.CORBA.PRIVATE_MEMBER;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -42,6 +41,11 @@ public class WebConfig implements WebMvcConfigurer {
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
+
+        //配置本地文件夹目录映射
+        //将handler请求路径映射到upload下的某个文件
+        registry.addResourceHandler("/upload/**")
+                .addResourceLocations("file:D:\\restartSpringBoot\\realwar\\uploads\\");
 
     }
 
