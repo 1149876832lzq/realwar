@@ -26,10 +26,10 @@ public enum ErrorCodeEnum {
     //3****业务异常
     XXX("3001","业务异常"),
     INSERT_FAILURE("3002","新增失败"),
-    UPDATE_FAILURE("3002","更新失败"),
-    DELETE_FAILURE("3002","删除失败"),
-    RATE_LIMIT_ERROE("3005","流量异常")
-    ;
+    UPDATE_FAILURE("3003","更新失败"),
+    DELETE_FAILURE("3004","删除失败"),
+    RATE_LIMIT_ERROE("3005","流量异常"),
+    FILE_UPLOAD_FAILURE("3006","文件上传失败");
 
     /**
      * 错误编码
